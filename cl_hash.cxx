@@ -36,6 +36,7 @@
 // Macros
 //
 
+
 #define _likely_(x) __builtin_expect((x), 1)
 #define _unlikely_(x) __builtin_expect((x), 0)
 
@@ -44,10 +45,19 @@ using u64 = uint64_t;
 using u32 = uint32_t;
 using u8 = uint8_t;
 
-auto _wymum() -> u64 { return 0; }
 
-static inline auto hash() -> uint64_t { return 0; }
+auto _wymum() -> u64
+{
+  return 0;
+}
 
-int main() {}
+static inline auto hash() -> uint64_t
+{
+  return 0;
+}
+
+int main()
+{
+}
 
 #endif
