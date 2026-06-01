@@ -1,4 +1,7 @@
 
+#ifndef cl_miler_rabin_hpp
+#define cl_miler_rabin_hpp
+
 #pragma once
 
 #include <bit>
@@ -49,8 +52,7 @@ inline T pow_mod_exp(T base, T exp, T mod)
 template <UInt T>
 bool miller_test(T base, T prime_candidate, int t_zeros, T exp)
 {
-  if (base >= prime_candidate)
-    base %= prime_candidate;
+  base %= prime_candidate;
   if (!base)
     return true;
 
@@ -141,4 +143,6 @@ template bool is_prime<u32>(u32);
 template bool is_prime<u64>(u64);
 template bool is_prime<int>(int);
 template bool is_prime<long long>(long long);
+#endif
+
 #endif
