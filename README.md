@@ -1,0 +1,3 @@
+- [x] Miller Rabin Primality Test
+- [x] WyHash
+- [ ] SwissTable
