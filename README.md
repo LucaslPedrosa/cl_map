@@ -1,3 +1,4 @@
 - [x] Miller Rabin Primality Test
 - [x] WyHash
 - [ ] SwissTable
+- [ ] Markov chains or som like that
